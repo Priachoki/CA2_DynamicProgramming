@@ -1,16 +1,16 @@
 # Dynamic Programming
 ## Team members: Diana Aboa, Priyanka Achoki
-##Overview
+## Overview
 This repository contains the materials for our CA2 Pair Project for  
 Algorithms & Data Structures. Our topic is on **Dynamic Programming**
 
-Things included in this project are:
- 1)A teaching screencast
- 2)C++ example implementations
- 3)Markdown documentation explaining the topic in depth
- 4)Performance analysis
- 5)Contribution breakdown
- 6)Refrences
+### Things included in this project are:
+ - A teaching screencast
+ - C++ example implementations
+ - Markdown documentation explaining the topic in depth
+ - Performance analysis
+ - Contribution breakdown
+ - Refrences
 
 ## Table of Contents
 
