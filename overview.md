@@ -49,7 +49,7 @@ Compute how many edits are needed to transform one string into another. DP uses 
 ## Comparision between Dynamic programming and other Techniques
 
 | **Dynamic Programming**                                  | **Greedy**                                    |
-|-------------------------------------------------- -------|-----------------------------------------------|
+|----------------------------------------------------------|-----------------------------------------------|
 | Considers all possibilities by building from subproblems | Makes the locally optimal choice at each step |
 | Ensures global optimality                                | May fail to reach global optimum              |
 | Often uses tables or recursion with memoization          | Often iterative, simple and fast              |
