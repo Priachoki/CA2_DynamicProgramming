@@ -35,6 +35,8 @@ This approach starts with the main problem and breaks it down into smaller subpr
 ### Bottom-up approach (also known as Tabulation)
 This approach starts by solving the smallest possible subproblems first. It iteratively builds up the solution to larger subproblems, storing the results in a table (often an array). The solution to the final problem is then found by combining the solutions of the subproblems in the table. 
 
+---
+
 ## Real Use Cases of DP
 Some of the applications are Optimization, Computer Science and Operations Research.
 ### 1.	Knapsack Problem 
@@ -43,4 +45,45 @@ Determines the maximum value of items that can be placed in a knapsack with a gi
 Find the longest strictly increasing subsequence in a list. DP stores the best possible LIS ending at each index. ( Computer Science ) 
 ### 3.	Edit Distance 
 Compute how many edits are needed to transform one string into another. DP uses a 2D grid comparing prefixes of the two strings. ( Computer Science )
+---
+## Comparision between Dynamic programming and other Techniques
+|----------------------------------------------------------|-----------------------------------------------|
+| **Dynamic Programming**                                  | **Greedy**                                    |
+|-------------------------------------------------- -------|-----------------------------------------------|
+| Considers all possibilities by building from subproblems | Makes the locally optimal choice at each step |
+| Ensures global optimality                                | May fail to reach global optimum              |
+| Often uses tables or recursion with memoization          | Often iterative, simple and fast              |
+| Knapsack passes                                          | Knapsack fails                                |
+|----------------------------------------------------------|-----------------------------------------------|
+<br>
+|---------------------------------------------|--------------------------------------------|
+| **Dynamic Programming**                     | **Divide & Conquer**                       |
+|---------------------------------------------|--------------------------------------------|
+| Subproblems overlap                         | Subproblems are usually independent        |
+| Stores results to avoid recomputation       | Solves subproblems separately              |
+| Example: Fibonacci DP avoids repeated work  | Example: Merge Sort divides and combine    |
+|---------------------------------------------|--------------------------------------------|
+<br>
+|----------------------------------------------------|--------------------------------------------------|
+| **Dynamic Programming**                            | **Recursion**                                    |
+|----------------------------------------------------|--------------------------------------------------|
+| Subproblems overlap and are reused                 | Subproblems may repeat without reuse             |
+| Stores results (memo/table) to avoid recomputation | Recomputes the same subproblems multiple times   |
+| Efficient: usually polynomial time                 | Can be exponential (e.g., Fibonacci O(2^n))      |
+| Often uses memoization or bottom-up tabulation     | Uses simple function calls with base cases       |
+| Example: DP Fibonacci stores previous values       | Example: Recursive Fibonacci recomputes values   |
+|----------------------------------------------------|--------------------------------------------------|
+
+---
+## Why Dynamic Programming Matters
+
+Dynamic programming isn't a particular algorithm but a way of thinking. It breaks problems into smaller pieces, identifying patterns, and optimizing solutions. It not only improves algorithmic efficiency but also strengthens problem solving intuition. <br>
+
+Understanding DP helps you:
+-	Tackle complex optimization problems systematically.
+-	Reduce exponential brute force solutions to polynomial time.
+-	Approach interviews and real world problems with confidence.
+-	Recognize when caching, reusing work, and building incrementally leads to better performance.
+ optimize 
+
 
