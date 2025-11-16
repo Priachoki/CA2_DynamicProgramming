@@ -1,8 +1,8 @@
 # Dynamic Programming
 ## Team members: Diana Aboa, Priyanka Achoki
-Overview
+##Overview
 This repository contains the materials for our CA2 Pair Project for  
-**DATA I8Z01 — Algorithms & Data Structures**.
+Algorithms & Data Structures. Our topic is on **Dynamic Programming**
 
 Things included in this project are:
  1)A teaching screencast
