@@ -13,9 +13,10 @@ Things included in this project are:
  6)Refrences
 
 Table of Content
-overview.md
-design.md
-code.md
-analysis.md
-contrib.md 
-references.md
+
+[Overview]([url](https://github.com/Priachoki/CA2_DynamicProgramming/blob/master/overview.md))
+[Design]([url](https://github.com/Priachoki/CA2_DynamicProgramming/blob/master/design.md))
+[Code]([url](https://github.com/Priachoki/CA2_DynamicProgramming/blob/master/code.md))
+[Analysis]([url](https://github.com/Priachoki/CA2_DynamicProgramming/blob/master/analysis.md))
+[Contribution]([url](https://github.com/Priachoki/CA2_DynamicProgramming/blob/master/contrib.md))
+[Refrence]([url](https://github.com/Priachoki/CA2_DynamicProgramming/blob/master/references.md))
