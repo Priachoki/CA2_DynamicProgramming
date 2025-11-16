@@ -47,24 +47,24 @@ Find the longest strictly increasing subsequence in a list. DP stores the best p
 Compute how many edits are needed to transform one string into another. DP uses a 2D grid comparing prefixes of the two strings. ( Computer Science )
 ---
 ## Comparision between Dynamic programming and other Techniques
-|----------------------------------------------------------|-----------------------------------------------|
+
 | **Dynamic Programming**                                  | **Greedy**                                    |
 |-------------------------------------------------- -------|-----------------------------------------------|
 | Considers all possibilities by building from subproblems | Makes the locally optimal choice at each step |
 | Ensures global optimality                                | May fail to reach global optimum              |
 | Often uses tables or recursion with memoization          | Often iterative, simple and fast              |
 | Knapsack passes                                          | Knapsack fails                                |
-|----------------------------------------------------------|-----------------------------------------------|
+
 <br>
-|---------------------------------------------|--------------------------------------------|
+
 | **Dynamic Programming**                     | **Divide & Conquer**                       |
 |---------------------------------------------|--------------------------------------------|
 | Subproblems overlap                         | Subproblems are usually independent        |
 | Stores results to avoid recomputation       | Solves subproblems separately              |
 | Example: Fibonacci DP avoids repeated work  | Example: Merge Sort divides and combine    |
-|---------------------------------------------|--------------------------------------------|
+
 <br>
-|----------------------------------------------------|--------------------------------------------------|
+
 | **Dynamic Programming**                            | **Recursion**                                    |
 |----------------------------------------------------|--------------------------------------------------|
 | Subproblems overlap and are reused                 | Subproblems may repeat without reuse             |
@@ -72,7 +72,7 @@ Compute how many edits are needed to transform one string into another. DP uses 
 | Efficient: usually polynomial time                 | Can be exponential (e.g., Fibonacci O(2^n))      |
 | Often uses memoization or bottom-up tabulation     | Uses simple function calls with base cases       |
 | Example: DP Fibonacci stores previous values       | Example: Recursive Fibonacci recomputes values   |
-|----------------------------------------------------|--------------------------------------------------|
+
 
 ---
 ## Why Dynamic Programming Matters
