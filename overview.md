@@ -27,3 +27,20 @@ It’s used when the same subproblems are solved repeatedly in different parts o
   -	A brute force or naive recursive solution is exponential.
   -	You can express the problem as a recurrence.
   -	Decisions depend on smaller instances of the same problem.
+---
+## Approaches of Dynamic Programming
+
+### Top-Down Approach (also known as Memoization)
+This approach starts with the main problem and breaks it down into smaller subproblems recursively. It uses cache to store the results of subproblems as they are computed. Before computing a subproblem, the method checks if its solution is already in the cache to avoid redundant calculations. 
+### Bottom-up approach (also known as Tabulation)
+This approach starts by solving the smallest possible subproblems first. It iteratively builds up the solution to larger subproblems, storing the results in a table (often an array). The solution to the final problem is then found by combining the solutions of the subproblems in the table. 
+
+## Real Use Cases of DP
+Some of the applications are Optimization, Computer Science and Operations Research.
+### 1.	Knapsack Problem 
+Determines the maximum value of items that can be placed in a knapsack with a given capacity. DP solves it using a table that builds solutions for smaller capacities.( Optimization)
+### 2.	Longest Increasing Subsequence
+Find the longest strictly increasing subsequence in a list. DP stores the best possible LIS ending at each index. ( Computer Science ) 
+### 3.	Edit Distance 
+Compute how many edits are needed to transform one string into another. DP uses a 2D grid comparing prefixes of the two strings. ( Computer Science )
+
