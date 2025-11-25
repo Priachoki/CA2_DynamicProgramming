@@ -109,9 +109,9 @@ Result: Each subproblem solved once, no recursion. Time complexity: O(n)
 
 # 4. Memoization vs Tabulation
 
-| Feature       | | Memoization                | | Tabulation              |
-|---------------| |----------------------------| |-------------------------|
-|Direction      | | Top-down (recursive)       | | Bottom-up (iterative)   |
-|When to use    | | Natural recursive problems | | All subproblems needed  |
-|Code style     | | Easier to write            | | More efficient          |
+| Feature     | Memoization                | Tabulation              |
+|-------------|----------------------------|-------------------------|
+| Direction   | Top-down (recursive)       | Bottom-up (iterative)   |
+| When to use | Natural recursive problems | All subproblems needed  |
+| Code style  | Easier to write            | More efficient          |
 
