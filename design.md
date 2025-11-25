@@ -115,3 +115,31 @@ Result: Each subproblem solved once, no recursion. Time complexity: O(n)
 | When to use | Natural recursive problems | All subproblems needed  |
 | Code style  | Easier to write            | More efficient          |
 
+
+Visual comparison:
+
+MEMOIZATION (Top-Down):
+Start at fib(5) → break down → hit base cases → build back up
+      5
+     ↙ ↘
+    4   3
+   ↙ ↘
+  3   2  ...
+
+TABULATION (Bottom-Up):
+Start at fib(0), fib(1) → build up → reach fib(5)
+0 → 1 → 1 → 2 → 3 → 5
+
+# 5. General DP Pattern
+Step 1: Define the state
+What do we need to track? (e.g., dp[i] = fibonacci number at position i)
+Step 2: Find the recurrence relation
+How do we calculate this state from previous states?
+(e.g., dp[i] = dp[i-1] + dp[i-2])
+Step 3: Set base cases
+What are the smallest subproblems we know?
+(e.g., dp[0] = 0, dp[1] = 1)
+Step 4: Decide the order
+Memoization: Start from main problem
+Tabulation: Start from base cases
+
