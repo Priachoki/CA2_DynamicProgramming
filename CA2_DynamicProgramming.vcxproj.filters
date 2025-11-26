@@ -18,8 +18,5 @@
     <ClCompile Include="CA2_DynamicProgramming.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fibonacciRecursion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
