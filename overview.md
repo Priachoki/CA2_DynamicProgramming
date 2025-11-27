@@ -56,7 +56,8 @@ Determines the maximum value of items that can be placed in a knapsack with a gi
 ### 2.	Longest Increasing Subsequence
 Find the longest strictly increasing subsequence in a list. DP stores the best possible LIS ending at each index. ( Computer Science ) 
 ### 3.	Edit Distance 
-Compute how many edits are needed to transform one string into another. DP uses a 2D grid comparing prefixes of the two strings. ( Computer Science )
+
+Compute how many edits are needed to transform one string into another. DP uses a 2D grid comparing prefixes of the two strings. (Computer Science)
 ---
 ## Comparision between Dynamic programming and other Techniques
 
