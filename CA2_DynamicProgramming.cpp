@@ -46,6 +46,29 @@ int fibTab(int n) {
 }
 
 
+// Knapsack
+int knapsack(int W, vector<int>& weights, vector<int>& values, int n) {
+	vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= W; j++) {
+
+			if (weights[i - 1] > j) {
+				dp[i][j] = dp[i - 1][j];
+			}
+			else {
+				int notTake = dp[i - 1][j];
+
+				int take = values[i - 1] + dp[i - 1][j - weights[i - 1]];
+
+				dp[i][j] = max(take, notTake);
+			}
+		}
+	}
+
+	return dp[n][W];
+}
+
 int main() {
 	int n = 10;
 
@@ -58,6 +81,13 @@ int main() {
 
 	//Test Tabulation
 	cout << "Fibonacci Tabulation: " << fibTab(n) << endl;
+
+	//Test knapsack
+	vector<int> weights = { 1,3,4,5 };
+	vector<int> values = { 1,4,5,7 };
+	int capacity = 7;
+
+	cout << "Knapsack max value: " << knapsack(capacity, weights, values, weights.size()) << endl;
 
 	return 0; 
 }
