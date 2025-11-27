@@ -11,10 +11,10 @@ In simple terms every number after the first two numbers is made by adding the s
  If the function needs the same value again instead of calculating it again it just reurns it from the memo table. This changes the time complexity from O(2ⁿ) to O(n) since there is no repeation
 
 # Fibonacci using Tabulation
-It is the bottom up version of dynamic programming. Instead of using recursion, Create a dp array and fill it from the smallest going upward. <img width="398" height="182" alt="image" src="https://github.com/user-attachments/assets/b83b313b-c4fc-4973-9a98-f66f79c03841" />  <br>
+It is the bottom up version of dynamic programming. Instead of using recursion, Create a dp array and fill it from the smallest going upward. <br/> <img width="398" height="182" alt="image" src="https://github.com/user-attachments/assets/b83b313b-c4fc-4973-9a98-f66f79c03841" />  <br>
 Start by setting dp[0] = 0 and dp[1] = 1 then using the fibonacci formula dp[i] = dp[i-1] + dp[i-2]. By the time the loop reaches i = n, the table already has all smaller Fibonacci values.This method is very fast because it does not repeat work and does not use recursion.
 
-#0/1 Knapsack
+# 0/1 Knapsack
 The 0/1 Knapsack problem chooses items to maximize value without exceeding capacity. 
 Created a 2D dp table:
 Rows reperesented number of items and columns represented capacities from 0 to W.
