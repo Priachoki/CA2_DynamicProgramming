@@ -15,8 +15,19 @@ It is the bottom up version of dynamic programming. Instead of using recursion, 
 Start by setting dp[0] = 0 and dp[1] = 1 then using the fibonacci formula dp[i] = dp[i-1] + dp[i-2]. By the time the loop reaches i = n, the table already has all smaller Fibonacci values.This method is very fast because it does not repeat work and does not use recursion.
 
 # 0/1 Knapsack
-The 0/1 Knapsack problem chooses items to maximize value without exceeding capacity. 
-Created a 2D dp table:
-Rows reperesented number of items and columns represented capacities from 0 to W.
-Each cel dp][j] represents the best values using the first i items with capacity.
-At each step we decide: either not to take the item or take the item.
+The 0/1 Knapsack problem chooses a set of items that maximizes total value without exceeding the weight capacity. Each item can either be taken (1) or not taken (0), which is why it is called “0/1”.
+
+-To solve it using dynamic programming, I created a 2D dp table:
+
+-Rows represent the number of items considered (0 to n)
+
+-Columns represent capacity values from 0 to j
+
+Each cell dp[i][j] stores the maximum value achievable using the first i items with a capacity limit of j
+
+At each step, I choose between:
+
+1) Not taking the item- keep the value from the row above: dp[i-1][j]
+
+2) Taking the item - add the item’s value to the best value for the remaining capacity:  <br/> <img width="407" height="32" alt="image" src="https://github.com/user-attachments/assets/169a811b-bd55-4946-89db-ed08253d7bcd" /> <br/>
+The dp table stores the optimal result for every subproblem, and the final answer is in: dp[n][W]
