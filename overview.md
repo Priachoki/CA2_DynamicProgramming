@@ -6,6 +6,11 @@ In simpler terms: **DP = recursion + caching.**
 
 ---
 
+## Why We chose Dynamic Programming
+- The main reason why we chose Dynamic Programming is because we wanted to get a better understanding of recursion, which we found a bit confusing in class, and also learn how Dynamic Programming improves it.
+- We also settled on Dynamic Programming because it is used in many real-life problems such as planning, searching, and optimization. 
+---
+
 ## Importance of Dynamic Programming
 
 -	Improves efficiency for problems with repeated substructures.
@@ -27,6 +32,13 @@ It’s used when the same subproblems are solved repeatedly in different parts o
   -	A brute force or naive recursive solution is exponential.
   -	You can express the problem as a recurrence.
   -	Decisions depend on smaller instances of the same problem.
+---
+
+## When Not to use Dynamic Programming
+- When subproblems do not overlap, DP gives no advantage.
+- When a greedy solution already gives the correct answer (e.g., fractional knapsack).
+- When memory is limited, because DP tables may use extra space.
+- When a simple iterative or recursive solution is fast enough.
 ---
 ## Approaches of Dynamic Programming
 
@@ -84,7 +96,8 @@ Understanding DP helps you:
 -	Reduce exponential brute force solutions to polynomial time.
 -	Approach interviews and real world problems with confidence.
 -	Recognize when caching, reusing work, and building incrementally leads to better performance.
- optimize 
-
-
+  
+---
+## Where Dynamic Programming Fits
+Dynamic Programming is an algorithm paradigm that solves problems by breaking them into smaller subproblems and storing the results to avoid repeated work.
 
